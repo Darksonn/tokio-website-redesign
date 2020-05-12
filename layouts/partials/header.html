@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/css/tokio.css">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+
+    <title>{{ .Title }}{{ if not .IsHome }} &middot; Tokio {{ end }}</title>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var burger = document.getElementById('nav-burger');
+  var libLink = document.getElementById('lib-link');
+  var libOpen = document.getElementById('nav-lib-open');
+  var open = false;
+  var handler = function() {
+    if (open) {
+      libOpen.style.display = 'none';
+    } else {
+      libOpen.style.display = 'block';
+    }
+    open = !open;
+  };
+  burger.onclick = handler;
+  libLink.onclick = handler;
+});
+  </script>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <a id="navbar-icon" href="/">
+        <img src="/img/tokio.svg">
+        Tokio
+      </a>
+      <div id="nav-right">
+        <a href="#" id="lib-link" class="nav-link">
+          Libraries &#x25be;
+        </a>{{ "" -}}
+        <a href="docs" class="nav-link">
+          Documentation
+        </a>{{ "" -}}
+        <a href="community" class="nav-link nav-link-last">
+          Community
+        </a>{{ "" -}}
+        <div id="nav-social">{{ "" -}}
+          <a class="nav-link" href=""><img src="/img/twitter.svg"></a>{{ "" -}}
+          <a class="nav-link" href=""><img src="/img/github.svg"></a>{{ "" -}}
+          <a class="nav-link" href=""><img src="/img/discord.svg"></a>{{ "" -}}
+        </div>
+        <div id="nav-burger"></div>
+      </div>
+      <div id="nav-lib-open" style="display:none">
+        test
+      </div>
+    </nav>

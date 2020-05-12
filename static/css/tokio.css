@@ -1,0 +1,140 @@
+body,html {
+  margin: 0;
+  padding: 0;
+}
+/* navbar */
+
+nav.navbar {
+  position: sticky;
+  top: 0; left: 0; right: 0;
+  height: 4rem;
+  background-color: black;
+  color: white;
+  padding: 0.4rem;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 16px;
+}
+#navbar-icon {
+  display: block;
+  height: 100%;
+  margin: 0.3rem 0;
+  float: left;
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+}
+#navbar-icon img {
+  height: 3.4rem;
+  vertical-align: middle;
+}
+
+#nav-right {
+  float: right;
+  display: block;
+  height: 100%;
+}
+.nav-link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+#nav-social {
+  display: inline-block;
+  padding-left: 2rem;
+  margin-left: 1rem;
+  border-left: 1px solid white;
+  vertical-align: middle;
+}
+#nav-social .nav-link {
+  margin-right: 1rem;
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+}
+.nav-link img {
+  vertical-align: middle;
+}
+
+#nav-burger {
+  float: right;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  background: url(/img/burger.svg) no-repeat center center;
+  cursor: pointer;
+}
+
+#nav-lib-open {
+  position: absolute;
+  top: 4.8rem; left: 0; right: 0;
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  #nav-social, .nav-link {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #nav-social {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #nav-burger {
+    display: none;
+  }
+}
+
+/* main page */
+
+.row {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto';
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+}
+div.row-center {
+  width: 90%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+#intro-row {
+  position: relative;
+  background-color: #FAF8F4;
+  padding: 2rem 0;
+  font-size: 18px;
+  line-height: 24px;
+}
+#get-started {
+  display: inline-block;
+  font-size: 18px;
+  background-color: #C83895;
+  border-radius: 6px;
+  padding: 12px 24px;
+  text-decoration: none;
+  color: white;
+}
+
+
+@media screen and (max-width: 767px) {
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+@media screen and (min-width: 1024px) {
+}

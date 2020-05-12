@@ -1,0 +1,5 @@
+baseURL = "https://tokio.rs"
+languageCode = "en-us"
+title = "Tokio - The asynchronous run-time for the Rust programming language."
+canonifyURLs = "true"
+googleAnalytics = "UA-90234741-1"
